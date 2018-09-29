@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Observer<T> {
+class Observable<T> {
     
     // define a bind property as a closure
     var bind: (T) -> () = {_ in}
     
-    init(value: T) {
+    init(_ value: T) {
         self.value = value
     }
     
