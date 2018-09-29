@@ -15,6 +15,7 @@
 		21212050215EE17F00409A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2121204E215EE17F00409A38 /* LaunchScreen.storyboard */; };
 		21212058215EE1AA00409A38 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21212057215EE1AA00409A38 /* Model.swift */; };
 		2121205A215EEAE600409A38 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21212059215EEAE600409A38 /* ViewModel.swift */; };
+		2121205C215EF64400409A38 /* MasterViewController_DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2121205B215EF64400409A38 /* MasterViewController_DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		21212051215EE17F00409A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21212057215EE1AA00409A38 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		21212059215EEAE600409A38 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2121205B215EF64400409A38 /* MasterViewController_DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController_DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				21212043215EE17E00409A38 /* AppDelegate.swift */,
 				21212045215EE17E00409A38 /* MasterViewController.swift */,
+				2121205B215EF64400409A38 /* MasterViewController_DataSource.swift */,
 				21212047215EE17E00409A38 /* DetailViewController.swift */,
 				21212049215EE17E00409A38 /* Main.storyboard */,
 				2121204C215EE17F00409A38 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				21212046215EE17E00409A38 /* MasterViewController.swift in Sources */,
 				21212044215EE17E00409A38 /* AppDelegate.swift in Sources */,
 				21212058215EE1AA00409A38 /* Model.swift in Sources */,
+				2121205C215EF64400409A38 /* MasterViewController_DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
