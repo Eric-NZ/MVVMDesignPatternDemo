@@ -17,6 +17,7 @@
 		2121205A215EEAE600409A38 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21212059215EEAE600409A38 /* ViewModel.swift */; };
 		2121205C215EF64400409A38 /* MasterViewController_DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2121205B215EF64400409A38 /* MasterViewController_DataSource.swift */; };
 		2121205E215F018200409A38 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2121205D215F018200409A38 /* Binding.swift */; };
+		21212060215F149800409A38 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2121205F215F149800409A38 /* RepeatingTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		21212059215EEAE600409A38 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2121205B215EF64400409A38 /* MasterViewController_DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController_DataSource.swift; sourceTree = "<group>"; };
 		2121205D215F018200409A38 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		2121205F215F149800409A38 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				21212057215EE1AA00409A38 /* Model.swift */,
 				21212059215EEAE600409A38 /* ViewModel.swift */,
 				2121205D215F018200409A38 /* Binding.swift */,
+				2121205F215F149800409A38 /* RepeatingTimer.swift */,
 			);
 			path = MVVMDesignPatternDemo;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				21212044215EE17E00409A38 /* AppDelegate.swift in Sources */,
 				21212058215EE1AA00409A38 /* Model.swift in Sources */,
 				2121205C215EF64400409A38 /* MasterViewController_DataSource.swift in Sources */,
+				21212060215F149800409A38 /* RepeatingTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

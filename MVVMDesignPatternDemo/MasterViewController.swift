@@ -27,6 +27,12 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        // add notification observer
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "updateUI"), object: nil, queue: OperationQueue.main) { (notification) in
+//            print (notification)
+            self.tableView.reloadData()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,8 +40,7 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
 
-    @objc
-    func insertNewObject(_ sender: Any) {
+    @objc func insertNewObject(_ sender: Any) {
         
         // add item using ViewModel object
         viewModel.addEntry()

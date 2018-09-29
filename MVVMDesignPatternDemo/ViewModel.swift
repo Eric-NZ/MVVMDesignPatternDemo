@@ -10,7 +10,9 @@ import Foundation
 
 class ViewModel {
     
-    private var model = Model<Date>()
+    // assign model variable a observable Model<Data>
+    // without Observable: private var model = Model<Date>()
+    private var model = Model<Observable<Date>>()
     
     // amount of items
     var count: Int {
@@ -19,7 +21,25 @@ class ViewModel {
     
     // add an item
     func addEntry () {
-        model.insert(Date())
+        // create an observalbe Date
+        let observableDate = Observable(Date())
+        
+        // set up bind for observableDate
+        observableDate.bind = { _ in
+            // post notification
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "updateUI"), object: nil)
+        }
+        
+        // dispatach a date update
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            observableDate.value = Date()
+            
+            print("Date changed!")
+        }
+        
+        // insert an obserable date
+        // without Obserable: model.insert(Date())
+        model.insert(observableDate)
     }
     
     // remove an item
@@ -33,6 +53,7 @@ class ViewModel {
             return nil
         }
         
-        return date.description
+        return date.value.description
     }
 }
+
